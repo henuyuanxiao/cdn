@@ -93,10 +93,10 @@ function GitCalendarInit(git_gitapiurl, git_color, git_user) {
               git_calendar_ctx.fillText("二", 0, 3.9 * linemaxwitdh);
               git_calendar_ctx.fillText("四", 0, 5.9 * linemaxwitdh);
               git_calendar_ctx.fillText("六", 0, 7.9 * linemaxwitdh);
-              var monthindexlist = git_calendar_c.width / 24;
+              var monthindexlist = git_calendar_c.width / 72;
               for (var index in git_monthchange) {
                 git_calendar_ctx.fillText(git_monthchange[index], monthindexlist, 0.7 * linemaxwitdh);
-                monthindexlist = monthindexlist + git_calendar_c.width / 12
+                monthindexlist = monthindexlist + git_calendar_c.width / 48
               }
             }
             git_calendar_c.onmousemove = function(event) {
